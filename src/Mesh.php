@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Ammunitions\Ammunition;
+
 class Mesh
 {
     private $ammunition;
@@ -9,6 +11,11 @@ class Mesh
     public function hold(Ammunition $ammunition): void
     {
         $this->ammunition = $ammunition;
+    }
+
+    public function getAmmunition(): Ammunition
+    {
+        return $this->ammunition;
     }
 
     public function free(): void

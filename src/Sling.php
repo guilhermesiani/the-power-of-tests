@@ -19,6 +19,6 @@ class Sling
         $this->fork->getElastic()
              ->stretch($ammunition)
              ->drop();
-        echo " on {$target->getName()}";
+        echo " on a {$target->getName()}";
     }
 }
