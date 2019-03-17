@@ -20,12 +20,13 @@ class Elastic
         return $this;
     }
 
-    public function drop(): void
+    public function drop(): string
     {
         if ($this->mesh->empty()) {
             throw new DomainException("No ammunition");
         }
-        echo "Launched a {$this->mesh->getAmmunition()->getName()}";
+        $ammunation = $this->mesh->getAmmunition();
         $this->mesh->free();
+        return "Launched a {$ammunation->getName()}";
     }
 }

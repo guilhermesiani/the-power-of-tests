@@ -22,7 +22,7 @@ $stone = new Stone;
 $bird = new Bird;
 
 // Testing shot
-$sling->shot(new Stone, new Bird);
+echo $sling->shot(new Stone, new Bird);
 ?>
 --EXPECTF--
 Launched a Stone on a Bird

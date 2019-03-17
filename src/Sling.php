@@ -14,11 +14,11 @@ class Sling
         $this->fork = $fork;
     }
 
-    public function shot(Ammunition $ammunition, Target $target): void
+    public function shot(Ammunition $ammunition, Target $target): string
     {
-        $this->fork->getElastic()
+        $shottedAmmunation = $this->fork->getElastic()
              ->stretch($ammunition)
              ->drop();
-        echo " on a {$target->getName()}";
+        return "$shottedAmmunation on a {$target->getName()}";
     }
 }
