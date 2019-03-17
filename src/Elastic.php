@@ -23,7 +23,7 @@ class Elastic
     public function drop(): string
     {
         if ($this->mesh->empty()) {
-            throw new DomainException("No ammunition");
+            throw new \DomainException("No ammunition");
         }
         $ammunation = $this->mesh->getAmmunition();
         $this->mesh->free();
