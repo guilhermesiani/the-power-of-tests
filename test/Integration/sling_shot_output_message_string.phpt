@@ -17,10 +17,6 @@ $elastic = new Elastic($mesh);
 $fork = new Fork($elastic);
 $sling = new Sling($fork);
 
-// Inputs to be used by Sling
-$stone = new Stone;
-$bird = new Bird;
-
 // Testing shot
 echo $sling->shot(new Stone, new Bird);
 ?>

@@ -16,6 +16,7 @@ class ShotTest extends TestCase
         ];
         $ch = curl_init();
         curl_setopt_array($ch, $options);
+
         $this->assertJsonStringEqualsJsonString(
             '{"data":{"action":"Launched a Stone on a Bird"}}',
             curl_exec($ch)
@@ -34,6 +35,7 @@ class ShotTest extends TestCase
         ];
         $ch = curl_init();
         curl_setopt_array($ch, $options);
+
         $this->assertJsonStringEqualsJsonString(
             '{"status":422,"code":"UnprocessableEntityError","message":"Invalid ammunition name"}',
             curl_exec($ch)
