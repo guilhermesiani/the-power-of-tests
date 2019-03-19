@@ -15,5 +15,5 @@ $elastic = new Elastic($mesh);
 $elastic->stretch(new Stone);
 echo $elastic->drop();
 ?>
---EXPECTF--
+--EXPECT--
 Launched a Stone

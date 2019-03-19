@@ -17,5 +17,5 @@ try {
     echo $exception->getMessage();
 }
 ?>
---EXPECTF--
+--EXPECT--
 No ammunition
