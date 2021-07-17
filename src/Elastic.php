@@ -7,12 +7,7 @@ use App\Mesh;
 
 class Elastic
 {
-    private $mesh;
-
-    public function __construct(Mesh $mesh)
-    {
-        $this->mesh = $mesh;
-    }
+    public function __construct(private Mesh $mesh) {}
 
     public function stretch(Ammunition $ammunition): Elastic
     {

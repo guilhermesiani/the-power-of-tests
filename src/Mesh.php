@@ -6,14 +6,14 @@ use App\Ammunitions\Ammunition;
 
 class Mesh
 {
-    private $ammunition;
+    private ?Ammunition $ammunition = null;
 
     public function hold(Ammunition $ammunition): void
     {
         $this->ammunition = $ammunition;
     }
 
-    public function getAmmunition(): Ammunition
+    public function getAmmunition(): ?Ammunition
     {
         return $this->ammunition;
     }

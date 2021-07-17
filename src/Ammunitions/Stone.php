@@ -4,10 +4,10 @@ namespace App\Ammunitions;
 
 class Stone implements Ammunition
 {
-    private $name = 'Stone';
+    private const NAME = 'Stone';
 
     public function getName(): string
     {
-        return $this->name;
+        return Stone::NAME;
     }
 }

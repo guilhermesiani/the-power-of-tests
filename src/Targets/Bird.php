@@ -4,10 +4,10 @@ namespace App\Targets;
 
 class Bird implements Target
 {
-    private $name = 'Bird';
+    private const NAME = 'Bird';
 
     public function getName(): string
     {
-        return $this->name;
+        return Bird::NAME;
     }
 }
